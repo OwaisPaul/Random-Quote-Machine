@@ -17,7 +17,7 @@ const getRandomColor = (): string =>{
   const green=Math.floor(Math.random() * 128);
   const blue= Math.floor(Math.random() * 128);
   
-  return 'rgb(${red}, ${green}, ${blue})';
+  return `rgb(${red}, ${green}, ${blue})`;
 
 }
 
@@ -44,7 +44,7 @@ const changeQuote = () => {
       <FaQuoteRight size="30" style ={{marginRight: "10px"}} />
                 </h2>
       
-      <h4 id="author">- {quote.author}</h4>
+      <h4 id="author">-{quote.author}</h4>
     </div>
     <div className="buttons">
       <a href={'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${quote.quote}'}
@@ -65,4 +65,4 @@ const changeQuote = () => {
   )
 }
  
-export default App
+export default App;
